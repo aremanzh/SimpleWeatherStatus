@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather Forecast</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <section>
+        <div class="main-content">
+          <div class="container">
+            <div class="row">
+              <div class="col-2">
+                <img class="icon" src=<%= weatherIconUrl %> alt="icon">
+                <p class="text"><%= weatherStatus %></p>
+                <p class="text"><%= weatherDesc %></p>
+              </div>
+              <div class="col-2">
+                <h2 class="title"><%= Name + ", " + Country %></h2>
+                <p class="text detail"><b><%= weatherTemp %></b></p>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-3">
+                <h3 class="title">Speed</h3>
+                <p class="text detail"><%= weatherSpeed %><span> km/h</span></p>
+              </div>
+              <div class="col-3">
+                <h3 class="title">Pressure</h3>
+                <p class="text detail"><%= weatherPressure %><span> "Hg</span></p>
+              </div>
+              <div class="col-3">
+                <h3 class="title">Humidity</h3>
+                <p class="text detail"><%= weatherHumidity %><span> %</span></p>
+              </div>
+            </div>
+            <div class="form">
+              <form action="/" method="post">
+                <input type="text" name="location" placeholder="search location...." required>
+                <input type="submit" value="Check">
+              </form>
+            </div>
+          </div>
+        </div>
+    
+        <div class="attribution">
+          Challenge for <a href="#" target="_blank">Personal Project</a>. 
+          Coded by <a href="#">mumtaaz.dev</a>.
+        </div>
+    </section>
+</body>
+</html>

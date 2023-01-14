@@ -19,7 +19,7 @@ var weatherIcon = "10n";
 var weatherIconUrl =
   "https://openweathermap.org/img/wn/" + weatherIcon + "@2x.png";
 
-var weatherTemp = "25.93°";
+var weatherTemp = "25.93";
 var weatherPressure = "1009";
 var weatherHumidity = "85";
 
